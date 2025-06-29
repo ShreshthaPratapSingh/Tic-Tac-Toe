@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            position: relative;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+        }
+
+        .overlay {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-image: url(bg.jpg);
+            background-size: cover;
+            opacity: 0.6;
+            z-index: 0;
+        }
+
+        h1 {
+            position: relative;
+            color: white;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            font-size: 50px;
+            font-family: "Michroma", sans-serif;
+        }
+        .boxcontainer{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            max-width: 20vw;
+            margin: auto;
+            gap: 10px;
+            z-index: 1;
+        }
+        .boxes {
+            border: 6px solid blueviolet;
+            position: relative;
+            width: 120px;
+            height: 120px;
+            z-index: 1;
+            border-radius: 10px;
+            background-color: black;
+            transition: 0.3s;
+        }
+        .boxes:hover{
+            background-color: rgb(73, 73, 73);
+            transition: 0.3s;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="overlay"></div>
+        <h1>Tic-Tac-Toe</h1>
+        <div class="boxcontainer">
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+        </div>
+
+    </div>
+</body>
+
+</html>
